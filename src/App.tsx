@@ -1,17 +1,16 @@
 import React from 'react';
+import Image from './Image/Image';
 import logo from './logo.svg';
 import './App.css';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
+    <div>
+      <header className="header">
+        <img src={logo} className="logo" alt="logo" />
+        <p>Image Gallery</p>
         <a
-          className="App-link"
+          className="header__link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
@@ -19,6 +18,7 @@ const App: React.FC = () => {
           Learn React
         </a>
       </header>
+      <Image />
     </div>
   );
 }
