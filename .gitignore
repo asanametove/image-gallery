@@ -11,6 +11,9 @@ coverage
 # production
 build
 
+#storage
+uploads
+
 # misc
 .DS_Store
 .env.local
